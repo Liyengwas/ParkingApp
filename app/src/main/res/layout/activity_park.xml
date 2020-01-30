@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:padding="20dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/app_into"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_logo"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:text=" Car Parking Application" />
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/app_into"
+        android:inputType="textPersonName"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="45dp"
+        android:background="@drawable/edittxt"
+        android:gravity="center"
+        android:padding="10dp"
+        android:hint="Vehicle Owner" />
+
+    <EditText
+        android:id="@+id/edVregNo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@id/edName"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="45dp"
+        android:background="@drawable/edittxt"
+        android:gravity="center"
+        android:padding="10dp"
+        android:hint="Vehicle Reg No." />
+
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@id/edVregNo"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="45dp"
+        android:background="@drawable/edittxt"
+        android:gravity="center"
+        android:padding="10dp"
+        android:hint="Phone Number"  />
+
+    <EditText
+        android:id="@+id/edParking"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@id/edPhone"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="45dp"
+        android:background="@drawable/edittxt"
+        android:gravity="center"
+        android:padding="10dp"
+        android:hint="Parking Slot"  />
+
+    <EditText
+        android:id="@+id/edHours"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@id/edParking"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="45dp"
+        android:background="@drawable/edittxt"
+        android:gravity="center"
+        android:padding="10dp"
+        android:hint="Hours To Park"  />
+
+    <EditText
+        android:id="@+id/edAmount"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@id/edHours"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="45dp"
+        android:background="@drawable/edittxt"
+        android:gravity="center"
+        android:padding="10dp"
+        android:hint="Parking Fees"  />
+
+    <Button
+        android:id="@+id/btnPark"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edAmount"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="95dp"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttons"
+        android:text="Proceed to Park" />
+
+
+</RelativeLayout>

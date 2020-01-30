@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:padding="20dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/app_into"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_logo"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:text=" Car Parking Application" />
+
+    <EditText
+        android:id="@+id/register_phone_number_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittxt"
+        android:padding="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="Phone Number"
+        android:layout_below="@id/app_into"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="17sp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/register_password_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_phone_number_input"
+        android:background="@drawable/edittxt"
+        android:padding="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_password_input"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="95dp"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttons"
+        android:text="Login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="Don't Have An Account ?" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons"
+            android:layout_marginRight="40dp"
+            android:textColor="#FFFFFF"
+            android:text="Register" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
